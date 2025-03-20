@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import toast, { Toaster } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 import fetchUserDetail from "./utils/fetchUserDetail";
 import { setUserDetails } from "./store/counterSlice";
 import { useDispatch } from "react-redux";
@@ -14,7 +14,7 @@ import CartMobile from "./components/CartMobile";
 
 const App = () => {
   const dispatch = useDispatch();
-
+  
   const fetchUser = async () => {
     try {
       const userData = await fetchUserDetail();

@@ -26,7 +26,7 @@ router.get("/user-detail", auth, userController.getUserDetailsController);
 
 // categories
 router.post("/add-category", auth, categoryController.AddCategoryController);
-router.get("/get-category", auth, categoryController.GetCategoryController);
+router.get("/get-category", categoryController.GetCategoryController);
 router.put(
   "/update-category",
   auth,
@@ -54,7 +54,6 @@ router.post(
 );
 router.get(
   "/get-sub-category",
-  auth,
   subCategoryController.GetSubCategoryController
 );
 router.put(
