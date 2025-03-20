@@ -11,7 +11,6 @@ import { useGlobalContext } from '../provider/GlobalProvider.jsx';
 
 const Address = () => {
   const addressList = useSelector(state => state.address.address)
-  console.log("addressList", addressList);
   const [openAddress,setOpenAddress] = useState(false)
   const [OpenEdit,setOpenEdit] = useState(false)
   const [editData,setEditData] = useState({})
