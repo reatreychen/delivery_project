@@ -128,7 +128,7 @@ const SubCategory = () => {
                     category.find((category)=>category._id == item.category)?.name || "Unknow Category"
                   }
                 </td>
-                <td className="py-2 text-sm justify-center items-center lg:flex md:flex flex">
+                <td className="py-2 text-sm justify-center items-center lg:flex md:flex flex  ">
                   <button
                     onClick={() => {
                       setEditSubCategory(item);
